@@ -21,7 +21,7 @@ const appointmentsWrapper = ({
 	console.log(config);
 
 	const appointmentsProto = grpc.loadPackageDefinition(definition).appointments;
-	const appointmentsClient = new appointmentsProto.Appointments('localhost:51000', grpc.credentials.createInsecure());
+	const appointmentsClient = new appointmentsProto.Appointments(config.RPC_HOST_SERVICE, grpc.credentials.createInsecure());
 
 	const appointmentsInterface = (request) => {
 		return new Promise((resolve, reject) => {
