@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package appointments;
+
+service Appointments {
+	rpc Scheduled (ScheduledRequest) returns (ScheduledResponse) {}
+}	
+
+message ScheduledRequest {
+}
+
+message ScheduledResponse {
+	string time = 1;
+	string date = 2;
+	string customerId = 3;
+}

@@ -1,0 +1,7 @@
+client-service/node_modules
+server-service/node_modules
+
+client-service/.env
+server-service/.env
+
+package-json.lock
