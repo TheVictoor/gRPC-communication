@@ -5,12 +5,13 @@ const Inert = require('@hapi/inert');
 const Vision = require('@hapi/vision');
 const HapiSwagger = require('hapi-swagger');
 
+const cofig = require('./config');
 const routes = require('./routes');
 
 const init = async () => {
 	const server = Hapi.server({
-		port: 3000,
-		host: 'localhost'
+		port: cofig.PORT,
+		host: cofig.HOST,
 	});
 
 	server.route(routes);

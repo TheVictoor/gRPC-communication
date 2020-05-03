@@ -1,10 +1,6 @@
 'use strict';
 
-const fakeResponse = {
-	time: '18:00',
-	date: '2020-05-05',
-	customerId: 4
-};
+const fakeResponse = require('../database');
 
 const appointmentWrapper = ({
 	grpc,
@@ -27,7 +23,6 @@ const appointmentWrapper = ({
 	const proto = grpc.loadPackageDefinition(definition).appointments;
 
 	const Scheduled = (call, callback) => {
-		console.log('rpc is working');
 		callback(null, fakeResponse);
 	};
 

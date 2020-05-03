@@ -1,29 +1,8 @@
 'use strict';
 
-const defaultWrapper = () => {
+const fakeResponse = require('../database');
 
-	const fakeResponse = [
-		{
-			time: '18:00',
-			date: '',
-			customerId: 4
-		},
-		{
-			time: '17:00',
-			date: '',
-			customerId: 3
-		},
-		{
-			time: '16:00',
-			date: '',
-			customerId: 2
-		},
-		{
-			time: '15:00',
-			date: '',
-			customerId: 1
-		}
-	];
+const defaultWrapper = () => {
 
 	const defaultFunction = ({
 		paylaod,

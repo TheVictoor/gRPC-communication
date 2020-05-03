@@ -6,11 +6,13 @@ service Appointments {
 	rpc Scheduled (ScheduledRequest) returns (ScheduledResponse) {}
 }	
 
-message ScheduledRequest {
-}
+message ScheduledRequest {}
 
 message ScheduledResponse {
-	string time = 1;
-	string date = 2;
-	string customerId = 3;
-} 
+	message Appointment {
+		string time = 1;
+		string date = 2;
+		int32 customerId = 3;
+	}
+	repeated Appointment appointments = 1;
+}

@@ -15,7 +15,7 @@ const defaultWrapper = ({
 
 		return onSuccess({
 			data: {
-				status: response
+				data: response
 			},
 			code: 200
 		});
