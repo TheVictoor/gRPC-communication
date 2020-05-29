@@ -1,5 +1,5 @@
 
-#  <p align='center'> :dart: Learning gRPC communication  </p> 
+#  <p align='center'> :dart: Learning gRPC </p> 
 
 ## :rocket: Install and run  
 - Set the environment variables
